@@ -1,0 +1,20 @@
+-- Online SQL Editor to Run SQL Online.
+-- Use the editor to create new tables, insert data and all other SQL operations.
+  
+create table programmer(
+  name varchar(10),
+  dob date,
+  doj date,
+  sex varchar(1),
+  prof1 varchar(15),
+  prof2 varchar(10),
+  salary int 
+  );
+
+  insert into programmer(name,dob,doj,sex,prof1,prof2,salary)values("sri", '21-4-66' , '21-4-92' ,"m","pascal","basic",3200);
+     insert into programmer(name,dob,doj,sex,prof1,prof2,salary)values("swathi", '21-4-66' , '21-4-92' ,"w","c program","basic",3400);  
+     insert into programmer(name,dob,doj,sex,prof1,prof2,salary)values("vishnu", '26-3-66' , '28-4-92' ,"m","python","intermediate",3600);  insert into programmer(name,dob,doj,sex,prof1,prof2,salary)values("akash", '12-4-66' , '21-4-72' ,"m","java","advance",8000);
+       insert into programmer(name,dob,doj,sex,prof1,prof2,salary)values("viswa", '21-4-66' , '21-4-83' ,"w","react","basic",5000);
+SELECT COUNT(programmer_id) AS num_programmers
+FROM programmer
+WHERE institution_name = 'SABHARI';
